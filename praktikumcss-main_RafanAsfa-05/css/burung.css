@@ -1,0 +1,85 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+}
+
+blockquote{
+    text-align: center;
+}
+
+.nav{
+    font-size: 30px;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+    background-color: antiquewhite;
+    color: aquamarine;
+    display: inline-block; 
+    border: 3px solid black;
+}
+
+.gambar{
+    justify-content: center;
+    display: flex;
+    gap: 8em;
+    background-color: rgb(187, 106, 0);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+.gambar img{
+    border-radius: 30px;
+}
+
+.isi{
+    font-size: 35px;
+    text-align: justify;
+    font: optional;
+}
+
+.profile{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.ternak{
+    font-size: 25px;
+    text-align: justify;                   
+}
+
+
+.koleksi img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 8em;
+
+}
+
+.promo{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.link{
+    border: 5px solid red;
+    padding: 3px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+    background-color: greenyellow;
+}

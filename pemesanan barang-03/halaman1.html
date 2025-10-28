@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pemesanan barang</title>
+</head>
+<body>
+
+    <header>
+        <hr>
+        <nav align="center">
+            <a href="#">Home</a> |
+            <a href="#">Generate Link</a> |
+            <a href="#">Transaction History</a> |
+            <a href="#">Policy</a> |
+            <a href="#">Logout</a> |
+        </nav>
+        <hr>
+    </header>
+    <form>
+        <table border="0" align="center">
+            <tr>
+                <td>
+                    <img src="MacBook_2009.jpeg" alt="Upload Preview" width="200" height="200"><br>
+                    <button type="button">Upload Picture</button>
+                </td>
+
+                <td>
+                    <label>Title here</label><br>
+                    <input type="text" name="title" value="MacBook Air €800 "><br><br>
+
+                    <label>Description :</label><br>
+                    <textarea name="description" rows="4" cols="40">year :2009
+Model :
+Condition : Mint
+                    </textarea><br><br>
+
+                    <label>Acount Number :</label><br>
+                    <input type="text" name="account_number" value="123-456-798-0"><br><br>
+
+                    <label>Bank</label><br>
+                    <select name="bank">
+                        <option>HSBC</option>
+                        <option>BNI</option>
+                        <option>MANDIRI</option>
+                        <option>BCA</option>
+                        <option>BRI</option>
+                    </select><br><br>
+
+                    <label>Acount Holder :</label><br>
+                    <input type="text" name="account_holder" placeholder="Name Here"><br><br>
+
+                    <label>Transaction :</label><br>
+                    <select name="transaction">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select><br>
+                    <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small><br><br>
+
+                    <input type="checkbox" checked>send to mobile phone <br>
+                    <input type="checkbox" checked>send to email <br><br>
+
+                    <label>send to mobile phone :</label><br>
+                    <input type="text" name="mobile" value="1234567890,1234567891"><br><br>
+
+                    <label>send to mobile email :</label><br>
+                    <input type="email" name="email" value="belibarang@gmail.com"><br><br>
+
+                    <button type="submit"><a href="halaman2.html">Generate nbr Link</a></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>
