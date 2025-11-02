@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 5.3</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .kotak-atas{
+            display: flex;
+            gap: 10px;
+        }
+
+        .kuning{
+            background-color: yellow;
+            width: 150px;
+            height: 90px;
+            border: 3px solid black;
+        }
+
+        .oren{
+           background-color: darkorange;
+           flex: 1;
+           height: 90px;
+           border: 3px solid black; 
+        }
+
+        .kotak-tengah{
+            display: flex;
+            gap: 10px;
+        }
+
+        .hijau{
+            background-color: lightgreen;
+            width: 150px;
+            height: 450px;
+            border: 3px solid black;
+        }
+
+        .abu{
+            background-color: gray;
+            flex: 1;
+            height: 450px;
+            border: 3px solid black;
+        }
+
+        .biru{
+            background-color: deepskyblue;
+            width: 150px;
+            height: 450px;
+            border: 3px solid black;
+        }
+
+        .bawah{
+            background-color: royalblue;
+            height: 90px;
+            border: 3px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak-atas">
+            <div class="kuning"></div>
+            <div class="oren"></div>
+        </div>
+
+        <div class="kotak-tengah">
+            <div class="hijau"></div>
+            <div class="abu"></div>
+            <div class="biru"></div>
+        </div>
+        
+        <div class="bawah"></div>
+    </div>
+</body>
+</html>
