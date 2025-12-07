@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <h2>Program Penjumlahan Dua Bilangan</h2>
+
+    <label>Bilangan pertama:</label>
+    <input type="number" id="bil1"><br><br>
+
+    <label>Bilangan kedua:</label>
+    <input type="number" id="bil2"><br><br>
+
+    <button onclick="jumlah()">Hitung Jumlah</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function jumlah() {
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = a + b;
+
+            document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+        }
+    </script>
+</body>
+</html>

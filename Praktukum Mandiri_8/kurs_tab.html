@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <h2>Dollar to Rupiah</h2>
+    <h4>Nilai kurs Rupiah = Rp. 16.000</h4>
+    <label for="dollar">Dollar</label>
+    <input type="number" id="dollar" onkeyup="hitung()">
+    <br>
+    <label for="rupiah">Rupiah</label>
+    <input type="number" id="rupiah" readonly>
+    <script>
+        function hitung(){
+            let dollar = parseFloat(document.getElementById("dollar").value);
+            let rupiah = dollar * 16000;
+            document.getElementById("rupiah").value = rupiah;
+        }
+    </script>
+    
+</body>
+</html>
