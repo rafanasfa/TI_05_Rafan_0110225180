@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image PIcker</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        #preview {
+            margin-top: 20px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            display: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Picker (Dropdown) Hewan Hewanan</h2>
+
+    <!-- Dropdown -->
+    <select id="imageSelect">
+        <option value="">-- Pilih Gambar --</option>
+        <option value="kucing.jpg">kucing</option>
+        <option value="kelinci.jpg">kelinci</option>
+        <option value="ayam.jpg">ayam</option>
+        <option value="serigala.jpg">serigala</option>
+        <option value="anjing.jpg">anjing</option>
+        <option value="angsa.jpg">angsa</option>
+    </select>
+
+    <!-- Tempat tampil gambar -->
+    <img id="preview" src="" alt="">
+
+    <script>
+        const dropdown = document.getElementById("imageSelect");
+        const preview = document.getElementById("preview");
+
+        dropdown.addEventListener("change", function() {
+            const fileName = this.value;
+
+            if (fileName === "") {
+                preview.style.display = "none";
+                return;
+            }
+
+            // Tampilkan gambar
+            preview.src = fileName;
+            preview.style.display = "block";
+
+            // Alert nama file
+            alert("Gambar dipilih: " + fileName);
+        });
+    </script>
+</body>
+</html>
