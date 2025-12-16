@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Registrasi Seminar/workshop</h1><hr>
+    <div class="container px-5 my-5">
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="namaLengkap" type="text" placeholder="Nama Lengkap" data-sb-validations="required" />
+                <label for="namaLengkap">Nama Lengkap</label>
+                <div class="invalid-feedback" data-sb-feedback="namaLengkap:required">Nama Lengkap is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="tempatLahir" type="text" placeholder="Tempat Lahir" data-sb-validations="required" />
+                <label for="tempatLahir">Tempat Lahir</label>
+                <div class="invalid-feedback" data-sb-feedback="tempatLahir:required">Tempat Lahir is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="tanggalLahir" type="text" placeholder="Tanggal Lahir" data-sb-validations="required" />
+                <label for="tanggalLahir">Tanggal Lahir</label>
+                <div class="invalid-feedback" data-sb-feedback="tanggalLahir:required">Tanggal Lahir is required.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="lakiLaki" type="checkbox" name="gender" data-sb-validations="" />
+                    <label class="form-check-label" for="lakiLaki">Laki Laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="perempuan" type="checkbox" name="gender" data-sb-validations="" />
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="email" type="email" placeholder="Email" data-sb-validations="required,email" />
+                <label for="email">Email</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">Email is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">Email Email is not valid.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="statusPeserta" aria-label="Status Peserta">
+                    <option value="Sudah Menikah">Sudah Menikah</option>
+                    <option value="Belum menikh">Belum menikh</option>
+                </select>
+                <label for="statusPeset">Status Peserta</label>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+</body>
+</html>
